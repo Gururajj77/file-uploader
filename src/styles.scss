@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-stone-100;
+  font-family: 'Inter',  sans-serif;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/inter-font.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
