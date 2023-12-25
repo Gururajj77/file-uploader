@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "file-uploader-7ef61": {
+      "hosting": {
+        "file-uploader": [
+          "file-uploader-7ef61"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "file-uploader-7ef61"
+  }
+}

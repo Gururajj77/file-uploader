@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "file-uploader",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
