@@ -18,7 +18,7 @@ export class UploadFileService {
     for (let i = 0; i < files.length; i++) {
       const file = files.item(i);
       if (file) {
-        const storageRef = ref(this.storage, file.name);
+        const storageRef = ref(this.storage, `file-uploads/${file.name}`);
         const uploadTask = uploadBytesResumable(storageRef, file);
 
         const uploadObservable = new Observable<UploadTaskSnapshot>(observer => {

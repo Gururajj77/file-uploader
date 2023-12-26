@@ -1,7 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Storage, UploadTaskSnapshot, getDownloadURL, ref, uploadBytesResumable, listAll } from '@angular/fire/storage';
-import { Observable } from 'rxjs';
 import { FetchFilesService } from '../services/fetch-files.service';
 import { UploadFileService } from '../services/upload-file.service';
 @Component({
@@ -13,11 +11,8 @@ import { UploadFileService } from '../services/upload-file.service';
 })
 export class HomeComponent {
 
-  private readonly storage: Storage = inject(Storage);
   private fileService: FetchFilesService = inject(FetchFilesService);
-  private uploadFileService: UploadFileService = inject(UploadFileService)
-
-  constructor() { }
+  private uploadFileService: UploadFileService = inject(UploadFileService);
 
   ngOnInit() {
     this.fileService.fetchFiles().subscribe((data) => {
